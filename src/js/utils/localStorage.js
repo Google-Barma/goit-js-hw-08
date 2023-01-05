@@ -17,6 +17,13 @@ const storage = {
       console.log(`Get state error: ${error.message}`);
     }
   },
+  delete: key => {
+    try {
+      localStorage.removeItem(key);
+    } catch (error) {
+      console.log(error.message);
+    }
+  },
 };
 
 export default storage;
