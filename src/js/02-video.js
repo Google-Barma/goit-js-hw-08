@@ -1,6 +1,6 @@
 import Vimeo from '@vimeo/player';
 import throttle from 'lodash.throttle';
-import storage from './localStorage';
+import storage from './utils/localStorage';
 
 const VIDEO_CURRENT_TIME = 'videoplayer-current-time' || 0;
 
